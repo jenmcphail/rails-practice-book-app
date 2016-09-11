@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Book.destroy_all
+
+book = Book.create! ([{title: "If You Give a Mouse a Cookie", author: "Some Lady", description: "mice and cookies."}, 
+  {title: "To Kill a Mockingbird", author: "Harper Lee", description: "Gem and Scout and Boo Radley"}, 
+  {title: "The Feminine Mystique", author: "Some Feminist Lady", description: "some top-notch feminist literature"}, 
+  {title: "Lean In", author: "Cheryl Sanberg", description: "some more top-notch feminist literature"}, {title: "If You Give a Mouse a Cookie", author: "Some Lady", description: "mice and cookies."}, 
+  {title: "To Kill a Mockingbird", author: "Harper Lee", description: "Gem and Scout and Boo Radley"}, 
+  {title: "The Feminine Mystique", author: "Some Feminist Lady", description: "some top-notch feminist literature"}, 
+  {title: "Lean In", author: "Cheryl Sanberg", description: "some more top-notch feminist literature"}, {title: "If You Give a Mouse a Cookie", author: "Some Lady", description: "mice and cookies."}, 
+  {title: "To Kill a Mockingbird", author: "Harper Lee", description: "Gem and Scout and Boo Radley"}, 
+  {title: "The Feminine Mystique", author: "Some Feminist Lady", description: "some top-notch feminist literature"}, 
+  {title: "Lean In", author: "Cheryl Sanberg", description: "some more top-notch feminist literature"}, {title: "If You Give a Mouse a Cookie", author: "Some Lady", description: "mice and cookies."}, 
+  {title: "To Kill a Mockingbird", author: "Harper Lee", description: "Gem and Scout and Boo Radley"}, 
+  {title: "The Feminine Mystique", author: "Some Feminist Lady", description: "some top-notch feminist literature"}, 
+  {title: "Lean In", author: "Cheryl Sanberg", description: "some more top-notch feminist literature"}])
