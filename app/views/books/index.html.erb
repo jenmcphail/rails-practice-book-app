@@ -9,9 +9,9 @@
   <div class='container'>
     <h1>Need Some Book Recos?</h1>
     <% @books.each do |book| %>
-      <h2><%=book.title%></h2>
+      <h2><a href="/books/<%= book.id %>"><%= book.title %></a></h2>
       <h4><%=book.author%></h4>
-      <p><%=book.description%></p>
+
     <% end %>
 
     <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
