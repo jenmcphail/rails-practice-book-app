@@ -45,6 +45,6 @@ group :development do
   gem 'spring'
 
   #Paginates a certain number of books per page.
-  gem 'will_paginate'
+  gem 'will_paginate-bootstrap'
 end
 
