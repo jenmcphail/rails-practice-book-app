@@ -4,9 +4,22 @@
   <title>Books App Show Page</title>
 </head>
 <body>
-  <h2><%= @book.title %></h2>
-  <p><%= @book.description %></p>
-  <p><%= link_to "Back", books_path%></p>
+  <div class="container">
+    <h2><%= @book.title %></h2>
+    <p><strong>Description:</strong></p>
+    <p><%= @book.description %></p>
+    
+    <% if @comments %>
+      <h4>Comments!</h4>
+
+      <% @comments.each do |comment| %>
+      <p><strong><%= comment.writer %></strong></p>
+      <p> <%= comment.comment_body %></p>
+      <% end %>
+      
+    <p><%= link_to "Back", books_path%></p>
+    <% end %>
+  </div>
 </body>
 </html>
 
